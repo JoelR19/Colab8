@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Técnico No Te Preocupes</title>
+    <link rel="stylesheet" href="../styles/services.css">
+
+    <style>
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.65);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .spinner {
+            width: 70px;
+            height: 70px;
+            border: 8px solid #ccc;
+            border-top: 8px solid #ff4444;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <h1>Imperio Juan Mecanico</h1>
+        <nav>
+            <ul>
+                <li><a href="./about.html" class="nav-link">Casa</a></li>
+                <li><a href="../about/about.html" class="nav-link">about</a></li>
+                <li><a href="services.html" class="nav-link">servicios</a></li>
+                <li><a href="../contact/contact.html" class="nav-link">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section class="intro-servicios">
+            <h2>nuestros servicios</h2>
+            <p>Ofrecemos soluciones integrales para todo tipo de dispositivos electrónicos. Con 0 años de experiencia pero much fe, garantizamos reparaciones de calidad con los mejores componentes del mercado.</p>
+        </section>
+
+        <section class="categorias-servicios">
+            <div class="categoria">
+                <div class="icono-categoria">Celu</div>
+                <h3>dispositivos móviles</h3>
+                <ul>
+                    <li>Reparación de pantallas rotas</li>
+                    <li>Cambio de baterías</li>
+                    <li>Solución de problemas de software</li>
+                    <li>Reparación de conectores de carga</li>
+                    <li>Reparación de cámaras</li>
+                    <li>Desbloqueo de dispositivos</li>
+                </ul>
+            </div>
+
+            <div class="categoria">
+                <div class="icono-categoria">PC</div>
+                <h3>computadoras y laptops</h3>
+                <ul>
+                    <li>Limpieza y mantenimiento interno</li>
+                    <li>Actualización de componentes</li>
+                    <li>Eliminación de virus y malware</li>
+                    <li>Recuperación de datos</li>
+                    <li>Reparación de placas madre</li>
+                    <li>Instalación de sistemas operativos</li>
+                </ul>
+            </div>
+
+            <div class="categoria">
+                <div class="icono-categoria">Carrito</div>
+                <h3>electrónica automotriz</h3>
+                <ul>
+                    <li>Diagnóstico de sistemas electrónicos</li>
+                    <li>Reparación de centralitas</li>
+                    <li>Sistemas de entretenimiento</li>
+                    <li>Electrónica de confort</li>
+                    <li>Sistemas de navegación GPS</li>
+                    <li>Reparación de sensores</li>
+                </ul>
+            </div>
+
+            <div class="categoria">
+                <div class="icono-categoria">Casota</div>
+                <h3>electrodomésticos</h3>
+                <ul>
+                    <li>Lavadoras y secadoras</li>
+                    <li>Refrigeradores y congeladores</li>
+                    <li>Hornos y microondas</li>
+                    <li>Aspiradoras y pequeños electrodomésticos</li>
+                    <li>Aires acondicionados</li>
+                    <li>Calefactores eléctricos</li>
+                </ul>
+            </div>
+
+            <div class="categoria">
+                <div class="icono-categoria">Juego</div>
+                <h3>consolas y entretenimiento</h3>
+                <ul>
+                    <li>Consolas de videojuegos</li>
+                    <li>Televisores y monitores</li>
+                    <li>Sistemas de audio</li>
+                    <li>Reproductores multimedia</li>
+                    <li>Proyectores</li>
+                    <li>Equipos de sonido</li>
+                </ul>
+            </div>
+
+            <div class="categoria">
+                <div class="icono-categoria">Especial</div>
+                <h3>servicios especializados</h3>
+                <ul>
+                    <li>Diagnóstico gratuito</li>
+                    <li>Presupuesto sin compromiso</li>
+                    <li>Garantía en todas las reparaciones</li>
+                    <li>Servicio a domicilio</li>
+                    <li>Asesoramiento técnico</li>
+                    <li>Venta de repuestos originales</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <section class="proceso-reparacion">
+        <h3>nuestro proceso de reparación</h3>
+        <div class="pasos">
+            <div class="paso">
+                <div class="numero-paso">1</div>
+                <h4>diagnóstico</h4>
+                <p>Evaluamos el problema de forma gratuita y detallada</p>
+            </div>
+            <div class="paso">
+                <div class="numero-paso">2</div>
+                <h4>presupuesto</h4>
+                <p>Te presentamos un presupuesto claro y sin sorpresas</p>
+            </div>
+            <div class="paso">
+                <div class="numero-paso">3</div>
+                <h4>reparación</h4>
+                <p>Realizamos la reparación con componentes de calidad</p>
+            </div>
+            <div class="paso">
+                <div class="numero-paso">4</div>
+                <h4>pruebas</h4>
+                <p>Verificamos que todo funcione correctamente</p>
+            </div>
+            <div class="paso">
+                <div class="numero-paso">5</div>
+                <h4>entrega</h4>
+                <p>Te entregamos tu dispositivo con garantía incluida</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="garantias">
+        <h3>nuestras garantías</h3>
+        <div class="garantias-contenido">
+            <div class="garantia-item">
+                <h4>garantía de calidad</h4>
+                <p>Todas nuestras reparaciones incluyen garantía por escrito de 3 a 12 meses según el servicio</p>
+            </div>
+            <div class="garantia-item">
+                <h4>repuestos originales</h4>
+                <p>Utilizamos componentes de alta calidad y, cuando es posible, repuestos originales</p>
+            </div>
+            <div class="garantia-item">
+                <h4>transparencia total</h4>
+                <p>Te informamos sobre el estado de tu dispositivo en todo momento</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicio-domicilio">
+        <div class="domicilio-contenido">
+            <h3>servicio a domicilio disponible</h3>
+            <p>Vieves en Malambo o algun lugar aledeño? Ofrecemos servicio a domicilio para reparaciones que no requieren equipamiento especializado. Consulta disponibilidad en tu zona.</p>
+            <a href="../contact/contact.html" class="btn-contacto">solicitar servicio a domicilio</a>
+        </div>
+    </section>
+
+    <script>
+        const loader = document.getElementById("loader");
+        const links = document.querySelectorAll(".nav-link");
+
+        links.forEach(link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                const url = this.getAttribute("href");
+
+                loader.style.display = "flex";
+
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 1200); 
+            });
+        });
+    </script>
+
+</body>
+</html>
